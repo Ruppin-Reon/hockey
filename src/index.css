@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Premium Hockey Agency Design System - Enhanced Colors & Typography */
+
+@layer base {
+  :root {
+    /* Premium Hockey Agency Design System - Light Mode */
+    --background: 252 100% 98%;
+    --foreground: 222 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 84% 4.9%;
+
+    --primary: 221 83% 53%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 98%;
+    --secondary-foreground: 222 84% 4.9%;
+
+    --muted: 210 40% 96%;
+    --muted-foreground: 215 16% 46.9%;
+
+    --accent: 197 92% 45%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 221 83% 53%;
+
+    --radius: 0.8rem;
+
+    /* Premium Hockey Color Palette */
+    --ice-blue: 197 92% 45%;
+    --ice-blue-light: 197 85% 85%;
+    --ice-blue-dark: 197 92% 35%;
+    --hockey-red: 0 84% 60%;
+    --hockey-gold: 45 93% 58%;
+    --navy-deep: 222 84% 4.9%;
+    --navy-medium: 215 25% 27%;
+    --navy-light: 210 40% 96%;
+    --steel-blue: 215 25% 27%;
+    --frost-white: 210 40% 98%;
+    
+    /* Rich Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(252 100% 98%) 0%, hsl(221 83% 98%) 25%, hsl(197 85% 95%) 75%, hsl(197 92% 90%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%) 0%, hsl(210 40% 99%) 50%, hsl(214 32% 97%) 100%);
+    --gradient-accent: linear-gradient(90deg, hsl(221 83% 53%) 0%, hsl(197 92% 45%) 50%, hsl(45 93% 58%) 100%);
+    --gradient-premium: linear-gradient(135deg, hsl(221 83% 53%) 0%, hsl(197 92% 45%) 35%, hsl(215 25% 27%) 100%);
+    --gradient-subtle: linear-gradient(180deg, hsl(210 40% 98%) 0%, hsl(214 32% 96%) 100%);
+    
+    /* Enhanced Shadows */
+    --shadow-glow: 0 0 50px hsl(197 92% 45% / 0.3), 0 0 100px hsl(221 83% 53% / 0.2);
+    --shadow-card: 0 10px 40px -15px hsl(222 84% 4.9% / 0.15), 0 0 0 1px hsl(214 32% 91%);
+    --shadow-premium: 0 20px 60px -20px hsl(221 83% 53% / 0.25);
+    
+    /* Advanced Animations */
+    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-spring: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 220 27% 12%;
+    --sidebar-primary: 197 92% 45%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 220 27% 96%;
+    --sidebar-accent-foreground: 220 27% 12%;
+    --sidebar-border: 220 27% 90%;
+    --sidebar-ring: 197 92% 45%;
+  }
+
+  .dark {
+    /* Dark mode uses same colors for hockey theme */
+    --background: 220 27% 2%;
+    --foreground: 0 0% 98%;
+    --card: 220 27% 4%;
+    --card-foreground: 0 0% 98%;
+    --popover: 220 27% 4%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 197 92% 60%;
+    --primary-foreground: 220 27% 2%;
+    --secondary: 220 27% 8%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 220 27% 6%;
+    --muted-foreground: 215 20% 70%;
+    --accent: 0 84% 60%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 220 27% 8%;
+    --input: 220 27% 8%;
+    --ring: 197 92% 60%;
+    --sidebar-background: 220 27% 4%;
+    --sidebar-foreground: 0 0% 98%;
+    --sidebar-primary: 197 92% 52%;
+    --sidebar-primary-foreground: 220 27% 2%;
+    --sidebar-accent: 220 27% 8%;
+    --sidebar-accent-foreground: 0 0% 98%;
+    --sidebar-border: 220 27% 8%;
+    --sidebar-ring: 197 92% 52%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
