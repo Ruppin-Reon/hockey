@@ -177,7 +177,7 @@ const Testimonials = () => {
                     </CardHeader>
                     <CardContent>
                       <blockquote className="font-body text-steel-blue leading-relaxed mb-8 text-lg italic">
-                        "{testimonial.quote}"
+                        {testimonial.quote}
                       </blockquote>
                       <div>
                         <div className="font-display font-semibold text-navy-deep text-lg">{testimonial.author}</div>

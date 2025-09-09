@@ -1,11 +1,11 @@
 import { useState, useRef } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
-import { Button } from "../components/ui/button";
+import { Button } from "./ui/button";
 import Logo2112 from "../assets/2112-logo.png";
 import Prohockey from "../assets/brand1.jpeg";
 
-const Navigation = () => {
+const Ncaa_Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
   const [activeDropdown, setActiveDropdown] = useState(null);
@@ -17,78 +17,10 @@ const Navigation = () => {
 
   const navItems = [
     { name: "Home", path: "/" },
-    {
-      name: "Our Company",
-      path: "/pro-hockey/company",
-      dropdown: {
-        columns: [
-          {
-            title: "Our Company",
-            links: [
-              { name: "Agents", path: "/pro-hockey/company/agents" },
-              { name: "Global Associates", path: "/pro-hockey/global_associates" },
-              { name: "Services", path: "/pro-hockey/services" },
-              { name: "Branding", path: "/pro-hockey/branding" },
-              { name: "Contact Form", path: "/pro-hockey/contact_form" },
-            ],
-          },
-        ],
-        image: {
-          src: Prohockey,
-          title: "Pro Hockey Collection",
-          link: "/pro-hockey/collection",
-        },
-      },
-    },
-    {
-      name: "Clients",
-      path: "/pro-hockey/clients",
-      dropdown: {
-        columns: [
-          {
-            title: "Clients",
-            links: [
-              { name: "Current Clients", path: "/pro-hockey/clients" },
-              { name: "Retired Clients", path: "/pro-hockey/client/retired_clients" },
-            ],
-          },
-        ],
-        image: {
-          src: Prohockey,
-          title: "Pro Hockey Collection",
-          link: "/pro-hockey/collection",
-        },
-      },
-    },
-    {
-      name: "Play Hockey In Europe",
-      path: "/pro-hockey/europe",
-      dropdown: {
-        columns: [
-          {
-            title: "Play Hockey In Europe",
-            links: [
-              { name: "Expected Salaries", path: "/pro-hockey/europe" },
-              { name: "Taxes", path: "/pro-hockey/featured/top" },
-              { name: "Cultural", path: "/pro-hockey/featured/top" },
-              { name: "Player Commision Rates", path: "/pro-hockey/featured/top" },
-              { name: "Expect to Play", path: "/pro-hockey/featured/top" },
-              { name: "Currency Converter", path: "/pro-hockey/featured/top" },
-              { name: "Urban Legends", path: "/pro-hockey/featured/top" },
-            ],
-          },
-        ],
-        image: {
-          src: Prohockey,
-          title: "Pro Hockey Collection",
-          link: "/pro-hockey/collection",
-        },
-      },
-    },
-    { name: "Staff", path: "/staff" },
+    { name: "Staff", path: "/ncaa-hockey/staff" },
     {
       name: "What We Do", 
-      path: "/whatwedo",
+      path: "/ncaa-hockey/whatwedo",
       dropdown: {
         columns: [
           {
@@ -102,13 +34,13 @@ const Navigation = () => {
         ],
         image: {
           src: Prohockey,
-          title: "Pro Hockey Collection",
-          link: "/pro-hockey/collection",
+          title: "Ncaa Hockey Collection",
+          link: "/Ncaa-hockey/collection",
         },
       },
     },
     { name: "Testimonials", 
-      path: "/testimonials",
+      path: "/ncaa-hockey/testimonials",
       dropdown: {
         columns: [
           {
@@ -121,14 +53,14 @@ const Navigation = () => {
         ],
         image: {
           src: Prohockey,
-          title: "Pro Hockey Collection",
-          link: "/pro-hockey/collection",
+          title: "Ncaa Hockey Collection",
+          link: "/Ncaa-hockey/collection",
         },
       },
     },
     { 
       name: "FAQ", 
-      path: "/faq/rule",
+      path: "/ncaa-hockey/faq/rule",
       dropdown: {
         columns: [
           {
@@ -156,15 +88,15 @@ const Navigation = () => {
         ],
         image: {
           src: Prohockey,
-          title: "Pro Hockey Collection",
-          link: "/pro-hockey/collection",
+          title: "Ncaa Hockey Collection",
+          link: "/Ncaa-hockey/collection",
         },
       },
     },
     // { name: "College/Junior", path: "/college-junior" },
     // { name: "Europe", path: "/europe" },
-    { name: "Contact", path: "/contact" },
-    { name: "Branding & Marketing", path: "/branding_marketing" },
+    { name: "Contact", path: "/ncaa-hockey/contact" },
+    { name: "Branding & Marketing", path: "/ncaa-hockey/branding_marketing" },
   ];
 
   // Dropdown handlers with animation
@@ -330,4 +262,4 @@ const Navigation = () => {
   );
 };
 
-export default Navigation;
+export default Ncaa_Navigation;

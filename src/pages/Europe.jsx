@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "../components/ui/card";
+import { Link } from "react-router-dom";
 import { Button } from "../components/ui/button";
 import { Input } from "../components/ui/input";
 import { Label } from "../components/ui/label";
@@ -195,15 +196,12 @@ const Europe = () => {
 
                   <section className="py-24">
                     <div className="container mx-auto px-6 text-center">
-                      <h2 className="text-4xl md:text-5xl font-display font-bold mb-6 text-navy-deep">Ready to Advance Your Career?</h2>
-                      <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-2xl mx-auto font-body font-medium">
-                        Let our experienced team guide you through every step of your hockey journey
-                      </p>
+                      <h2 className="text-4xl md:text-5xl font-display font-bold mb-6 text-navy-deep">Still have some questions?</h2>
                       <div className="flex flex-col sm:flex-row gap-6 justify-center">
                         <Button size="lg" className="font-body font-semibold px-10 py-4 text-lg" asChild>
-                          <a href="https://college-hockey-family-advisor.appointedd.com/app/600d297a4bd55d1ee6392262" target="_blank" rel="noopener noreferrer">
-                            Book Free Consultation
-                          </a>
+                          <Link to="/pro-hockey/europe/culture">
+                            View more
+                          </Link>
                         </Button>
                         <Button variant="outline" size="lg" className="font-body font-semibold px-10 py-4 text-lg" asChild>
                           <a href="/contact">
